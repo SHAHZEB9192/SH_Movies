@@ -70,32 +70,36 @@ nav{
     padding: .5rem;
     border-radius: 4px;
 }
-.header-content{
+.banner .box{
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    /* margin-top: 100px; */
 }
-.header-content h1{
-    font-size: 3rem;
-    line-height: 70px;
-    font-weight: 700;
-    max-width: 650px;
+.banner .box .heading h1{
+    color: var(--text-color);
+    font-size: 3.125em;
 }
-.header-content h3{
-    margin-top: 1rem;
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-.header-content p{
-    font-size: 1.2rem;
+.banner .box .heading h5{
+    color: var(--text-color);
+    font-size: 1.625em;
     font-weight: 400;
-    margin-bottom: .9rem;
+    padding: 1rem 0;
+}
+.banner .box .heading p{
+    color: var(--text-color);
+    font-size: 1.4em;
+    font-weight: 350;
+    padding: 5px 0;
+    margin: 5px;
 }
 .email-signup{
     background: transparent;
@@ -357,19 +361,19 @@ input[type="radio"]{
         padding: .01rem;
         font-size: 0.9rem;
     }
-    .header-content{
+   .banner .box{
         position: unset;
         transform: none;
         padding-top: 100px;
     }
-    .header-content h1{
+    .banner .box .heading h1{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .banner .box .heading h5{
         font-size: 1.5rem;
-        line-height: 30px;
     }
-    .header-content h3{
-        font-size: 1.2rem;
-    }
-    .header-content p{
+    .banner .box .heading p{
         font-size: 1rem;
     }
     .email-signup a{
