@@ -437,4 +437,8 @@ input[type="radio"]{
         font-size: 20px;
         right: 10px;
     }
+    .faq .email-signup a{
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
 }
